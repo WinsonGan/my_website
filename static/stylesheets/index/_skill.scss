@@ -1,0 +1,22 @@
+.skill {
+  .container {
+    padding-bottom: 5%;
+  }
+
+  .skill-content {
+    margin: 50px 30px;
+    text-align: center;
+  }
+
+  .skill-pic {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    filter: opacity(70%);
+    transition: 1s;
+    &:hover {
+      filter: opacity(100%);
+      transform: scale(1.2);
+    }
+  }
+}

@@ -1,0 +1,53 @@
+header {
+  overflow: hidden;
+}
+
+header .container,
+header .row {
+  height: 100vh;
+}
+
+.header-content {
+  p {
+    text-align: justify;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  span {
+    &::after {
+      content: "|";
+      font-weight: 100;
+      color: $primary-color;
+      display: inline-block;
+      transform: translateY(-5px);
+      animation: blink infinite 1s;
+    }
+  }
+
+  .icon-size {
+    vertical-align: middle;
+    padding-right: 10px;
+    font-size: 30px;
+    color: $primary-color;
+  }
+
+  button {
+    position: relative;
+    left: 70%;
+  }
+}

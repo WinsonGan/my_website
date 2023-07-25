@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Winson Gan</title>
+    <link rel="stylesheet" href="./static/stylesheets/index.css">
+    <script type="module" src="./static/script/index.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="shortcut icon" href="./static/images/wg_logo.svg" type="image/x-icon">
+</head>
+
+<body class="p-relative">
+    <!-- Header & Navigation Section -->
+    <nav>
+        <div class="navbar">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="brand open-sans-extabold">
+                    <object data="./static/images/wg_logo.svg"></object>
+                    <a href="#">WINSONGWG.</a>
+                </div>
+                <ul class="d-flex navbar-list open-sans-extabold">
+                    <li><a href="#about" class="list-item">ABOUT</a></li>
+                    <li><a href="#skill" class="list-item">SKILL</a></li>
+                    <li><a href="#project" class="list-item">PROJECT</a></li>
+                    <li><a href="#certificate" class="list-item">CERTIFICATE</a></li>
+                    <li><a href="#contact" class="list-item">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Content Section -->
+    <header class="p-relative">
+        <div class="container p-relative">
+            <img src="./static/images/paint_top.png" alt="decorator_top" class="p-absolute decorator-top pos-3d"
+                move-speed="0.2" move-distance="0.03">
+            <div class="row">
+                <div class="col-md-5 d-flex align-items-center">
+                    <div class="header-content">
+                        <h2>Hello World!</h2>
+                        <h1>I am <span class="open-sans-extabold" id="typing">WINSON GAN</span>😎</h1>
+                        <p>Highly adaptable, flexible and reliable team player who is committed to achieve a common
+                            goal, but also enjoys working independently. I am seeking for a chance to apply my academic
+                            knowledge and skills in improving the quality of human life, as well as accomplishing
+                            company vision and mission.</p>
+                        <div>
+                            <a href="https://github.com/WinsonGan" target="_blank">
+                                <i class="bi bi-github bi-lg icon-size"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/gan-wei-guang-0b336018a/" target="_blank">
+                                <i class="bi bi-linkedin icon-size"></i>
+                            </a>
+                        </div>
+                        <a href="./static/downloadable/Winson's_Resume.pdf" target="_blank">
+                            <button type="button" class="btn-purple-gradient">My Resume</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5 offset-md-1">
+                    <img src="./static/images/profile.png" alt="profile" class="p-absolute profile pos-3d"
+                        move-speed="0.5" move-distance="0.05" move-area="1">
+                </div>
+            </div>
+        </div>
+        <img src="./static/images/paint_bottom.png" alt="decorator_bottom" class="p-absolute decorator-bottom pos-3d"
+            move-speed="0.1" move-distance="0.02" move-inverse="1">
+    </header>
+
+    <!-- About Me Section -->
+    <section class="about dark-background" id="about">
+        <div class="container p-relative">
+            <div class="title noto-sans-black"> My Journey </div>
+            <div class="row reveal">
+                <div class="col-md-5 d-flex align-items-center">
+                    <div class=" journey-content">
+                        <h1>UNIVERSITI TUN HUSSEIN ONN MALAYSIA<span>( Aug 2016 - Sep 2020 )</span></h1>
+                        <div class="journey-detail">
+                            <h2>Qualification: </h2>
+                            <ul>
+                                <li>Bachelor of Mechanical Engineering with Honours</li>
+                                <li>Graduated with CGPA 3.84</li>
+                                <li>Major in Robotics and Control System</li>
+                                <li>Final Year Project (FYP) : Virtual Reality (VR) Simulation of Automated Automotive
+                                    Assembly
+                                    Process</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 offset-md-1 d-flex align-items-center">
+                    <a href="https://uthm.edu.my/en/" target="_blank">
+                        <img src="./static/images/journey/uthm.jpg" alt="UTHM" class="journey-pic" title="UTHM">
+                    </a>
+                </div>
+            </div>
+            <div class="row reveal">
+                <div class="col-md-5 d-flex align-items-center">
+                    <a href="https://www.dfe-tech.com/" target="_blank">
+                        <img src="./static/images/journey/dfetech.jpg" alt="DFETECH" class="journey-pic"
+                            title="DFETECH">
+                    </a>
+                </div>
+                <div class="col-md-6 offset-md-1 d-flex align-items-center">
+                    <div class=" journey-content">
+                        <h1>DYNA FORMING ENGINEERING & TECHNOLOGY SDN. BHD.<span>( Jul 2019 - Sep 2019 )</span></h1>
+                        <h3>Position: Internship Trainee </h3>
+                        <div class="journey-detail">
+                            <h2>Job Task: </h2>
+                            <ul>
+                                <li>Researched and queried on product relevant data</li>
+                                <li>Configured parameters for each product testing</li>
+                                <li>Carried out product testing through simulation</li>
+                                <li>Analyzed the result and conducted optimization to the product</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row reveal">
+                <div class="col-md-5 d-flex align-items-center">
+                    <div class=" journey-content">
+                        <h1>SKYMIND HOLDINGS BERHAD<span>( May 2021 - Oct 2021 )</span></h1>
+                        <h3>Position: AI Engineerr </h3>
+                        <div class="journey-detail">
+                            <h2>Job Task: </h2>
+                            <ul>
+                                <li>Planned and curated on AI & programming training course</li>
+                                <li>Researched and developed on practical AI use cases</li>
+                                <li>Delivered and conveyed course contents in training session</li>
+                                <li>Setup virtual environmental for examinations</li>
+                                <li>Provided support and resolved issues raised by trainees</li>
+                                <li>Researched and developed on the Learning Management System (LMS) website</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 offset-md-1 d-flex align-items-center">
+                    <a href="https://www.skymind.global/" target="_blank">
+                        <img src="./static/images/journey/skymind.jpg" alt="SKYMIND" class="journey-pic"
+                            title="SKYMIND">
+                    </a>
+                </div>
+            </div>
+            <div class="row reveal">
+                <div class="col-md-5 d-flex align-items-center">
+                    <a href="#" target="_blank">
+                        <img src="./static/images/journey/freelancer.jpg" alt="FREELANCER" class="journey-pic"
+                            title="FREELANCER">
+                    </a>
+                </div>
+                <div class="col-md-6 offset-md-1 d-flex align-items-center">
+                    <div class=" journey-content">
+                        <h1>FREELANCER<span>( Jan 2022 - Present )</span></h1>
+                        <div class="journey-detail">
+                            <h2>Job Task: </h2>
+                            <ul>
+                                <li>Self-taught to enhance skills in programming knowledge and computer science</li>
+                                <li>Researched and developed different kind of websites</li>
+                                <li>Researched and developed applications in computer vision</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Section -->
+    <section class="skill" id="skill">
+        <div class="container p-relative">
+            <div class="title noto-sans-black">Skill</div>
+            <div class="row">
+                <div class="skill-content d-flex flex-wrap">
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/html.png" alt="HTML" title="HTML" class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/css.png" alt="CSS" title="CSS" class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/js.png" alt="Javascript" title="Javascript" class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/bootstrap.png" alt="Bootstrap" title="Bootstrap"
+                            class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/sass.png" alt="Sass" title="Sass" class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/jquery.svg" alt="Jquery" title="Jquery" class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/vue.png" alt="Vuse" title="Vue" class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/python.png" alt="Python" title="Python" class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/django.svg" alt="Django" title="Django" class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/elasticsearch.png" alt="Elasticsearch" title="Elasticsearch"
+                            class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/twilio.png" alt="Twilio" title="Twilio" class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/celery.png" alt="Celery" title="Celery" class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/rabbitmq.png" alt="Rabbitmq" title="Rabbitmq" class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/nginx.png" alt="Nginx" title="Nginx" class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/docker.png" alt="Docker" title="Docker" class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/linux.png" alt="Liinux" title="linux" class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/github.png" alt="Github" title="Github" class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/jupyter.png" alt="Jupyter" title="Jupyter" class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/numpy.svg" alt="Numpy" title="Numpy" class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/pandas.png" alt="Pandas" title="Pandas" class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/matplotlib.png" alt="Matplotlib" title="Matplotlib"
+                            class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/kafka.png" alt="Kafka" title="Kafka" class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/tensorflow.png" alt="Tensorflow" title="Tensorflow"
+                            class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/pytorch.png" alt="Pytorch" title="Pytorch" class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/mysql.png" alt="MySQL" title="MySQL" class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/redis.png" alt="Redis" title="Redis" class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/VScode.png" alt="VScode" title="VScode" class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/photoshop.png" alt="Photoshop" title="Photoshop"
+                            class="skill-pic">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./static/images/Icon/illustrator.png" alt="Illustrator" title="Illustrator"
+                            class="skill-pic">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <section class="project dark-background" id="project">
+        <div class="container p-relative">
+            <div class="title noto-sans-black">Personal Project</div>
+            <div class="row d-flex justify-content-around">
+                <div class="project-content pop-up-detail reveal">
+                    <img src="./static/images/project/wgmall_1.jpg" alt="WGMALL" class="project-pic ">
+                    <h3 class="noto-sans-black">WGMALL</h3>
+                </div>
+                <div class="project-detail">
+                    <div class="row d-flex justify-content-evenly">
+                        <div class="close noto-sans-black d-flex">
+                            <p id="close-detail">X</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="./static/images/project/wgmall_1.jpg" alt="WGMALL">
+                        </div>
+                        <div class="col-md-5 project-description">
+                            <h1 class="noto-sans-black">WGMALL</h1>
+                            <p class="open-sans-extabold">
+                                A B2C ecommerce website where the business sells products to public consumers. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Fuga nesciunt commodi voluptates
+                                recusandae non perspiciatis rerum, nemo consectetur voluptate voluptatem repellat! Alias
+                                ullam beatae est saepe numquam ad nisi dolores. Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Animi libero, illo minima provident accusamus blanditiis perferendis a
+                                dignissimos consequuntur. Corporis odio quasi aliquam nisi quidem omnis quod praesentium
+                                obcaecati libero!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content reveal">
+                    <img src="./static/images/project/wgmall_1.jpg" alt="Project_1" class="project-pic">
+                </div>
+                <div class="project-content reveal">
+                    <img src="./static/images/project/wgmall_1.jpg" alt="Project_2" class="project-pic">
+                </div>
+                <div class="project-content reveal">
+                    <img src="./static/images/project/wgmall_1.jpg" alt="Project_3" class="project-pic">
+                </div>
+                <div class="project-content reveal">
+                    <img src="./static/images/project/wgmall_1.jpg" alt="Project_4" class="project-pic">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Section -->
+    <section class="certificate" id="certificate">
+        <div class="container p-relative">
+            <div class="title noto-sans-black">Certificate</div>
+            <div class="row d-flex justify-content-around reveal">
+                <div class="certificate-content">
+                    <img src="./static/images/certificate/GCP.jpg" alt="GCP" class="certificate-pic" title="GCP">
+                    <div class="scale-height d-flex justify-content-center align-items-center">
+                        <h3>Google Cloud Platform</h3>
+                    </div>
+                    <p>Completed 4 tasks</p>
+                    <a href="./static/downloadable/GCP.pdf" target="_blank">
+                        <button type="button" class="btn-purple-gradient">Preview</button>
+                    </a>
+                </div>
+                <div class="certificate-content">
+                    <img src="./static/images/certificate/HCIA.jpg" alt="HCIA" class="certificate-pic" title="HCIA">
+                    <div class="scale-height d-flex justify-content-center align-items-center">
+                        <h3>Huawei Certified ICT Associate (HCIA)</h3>
+                    </div>
+                    <p>Passed examination</p>
+                    <a href="./static/downloadable/HCIA.pdf" target="_blank">
+                        <button type="button" class="btn-purple-gradient">Preview</button>
+                    </a>
+                </div>
+                <div class="certificate-content">
+                    <img src="./static/images/certificate/CDLE.jpg" alt="CDLE" class="certificate-pic" title="CDLE">
+                    <div class="scale-height d-flex justify-content-center align-items-center">
+                        <h3>Certified Deep Learning Engineer (CDLE)</h3>
+                    </div>
+                    <p>Passed examination</p>
+                    <a href="./static/downloadable/CDLE.pdf" target="_blank">
+                        <button type="button" class="btn-purple-gradient">Preview</button>
+                    </a>
+                </div>
+                <div class="certificate-content">
+                    <img src="./static/images/certificate/AIFE.jpg" alt="AIFE" class="certificate-pic" title="AIFE">
+                    <div class="scale-height d-flex justify-content-center align-items-center">
+                        <h3>AI for Everyone (AIFE)</h3>
+                    </div>
+                    <p>Passed examination</p>
+                    <a href="./static/downloadable/AIFE.pdf" target="_blank">
+                        <button type="button" class="btn-purple-gradient">Preview</button>
+                    </a>
+                </div>
+                <div class="certificate-content">
+                    <img src="./static/images/certificate/AIFDP.jpg" alt="AIFDP" class="certificate-pic" title="AIFDP">
+                    <div class="scale-height d-flex justify-content-center align-items-center">
+                        <h3>Artificial Intelligence from the Data Perspective (AIFDP)</h3>
+                    </div>
+                    <p>Completed training course</p>
+                    <a href="./static/downloadable/AIFDP.pdf" target="_blank">
+                        <button type="button" class="btn-purple-gradient">Preview</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact dark-background" id="contact">
+        <div class="container p-relative">
+            <div class="title noto-sans-black">Contact Me</div>
+            <div class="row">
+                <div class="contact-content col-md-5">
+                    <form action="https://formspree.io/f/myyqzvee" method="post" id="contact-message">
+                        <div class="input">
+                            <label for="name">Name : </label>
+                            <input type="text" name="name" id="name" placeholder="Name" required>
+                        </div>
+                        <div class="input">
+                            <label for="email">Email : </label>
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="input">
+                            <label for="tel">Phone : </label>
+                            <input type="tel" name="tel" id="tel" placeholder="Phone"
+                                pattern="^(01)[02346789]\d{7}$|^(01)[018]\d{8}$|^(65)\d{8}$">
+                        </div>
+                        <div class="input">
+                            <label for="textMessage" class="textLabel">Message : </label>
+                            <textarea name="textMessage" id="textMessage" cols="30" rows="10"
+                                placeholder="Type your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-purple-gradient noto-sans-black">SUBMIT</button>
+                    </form>
+                </div>
+                <div class="col-md-5 offset-md-1 noto-sans-black p-relative contact-detail">
+                    Thank you for reviewing my Portfolio & Resume. Feel free to drop a note and I am looking forward to
+                    answer your email.
+                    <div class="contact-info p-absolute open-sans-extabold">
+                        <span><i class="bi bi-telephone-fill"></i></span> :
+                        <a href="tel:+60176638042">+60176638042</a>
+                        <br />
+                        <span><i class="bi bi-envelope-fill"></i></span> :
+                        <a href="mailto:winsongwg96@gmail.com">winsongwg96@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="copyright">
+        <div class="container noto-sans-black">
+            <p> &copy; Copyright 2023 - WINSON GAN WEI GUANG. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

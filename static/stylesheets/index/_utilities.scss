@@ -1,0 +1,92 @@
+// Color Define
+$primary-color: #4700e7;
+$secondary-color: #a70afb;
+
+// Position
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+// Font
+.open-sans-extabold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+
+.noto-sans-black {
+  font-weight: 800;
+}
+
+// Background
+.dark-background {
+  background-color: darken($primary-color, 30);
+  color: white;
+}
+
+// Button
+.btn-purple-gradient {
+  padding: 15px 30px;
+  border-radius: 100px;
+  border: none;
+  color: white;
+  background-image: linear-gradient(to bottom, $primary-color, $secondary-color);
+  transition: box-shadow 0.25s, transform 0.25s;
+  &:hover,
+  &:active {
+    background-image: linear-gradient(to bottom, darken($primary-color, 5%), darken($secondary-color, 5%));
+    box-shadow: $secondary-color 3px 3px 10px;
+    transform: scale(1.1);
+  }
+}
+
+// Effect
+.box-shadow-black {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.6s;
+}
+
+.stroke-white {
+  font-size: 23px;
+  -webkit-text-stroke-width: 1.15px;
+  -webkit-text-stroke-color: white;
+}
+
+.stroke-black {
+  font-size: 23px;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.reveal {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1.5s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+// Structure
+.title {
+  padding-top: 10%;
+  margin-bottom: 5%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  &::before,
+  &::after {
+    margin: 0px 50px;
+    content: "";
+    display: inline-block;
+    width: 20%;
+    vertical-align: middle;
+    border-bottom: 5px solid;
+  }
+}

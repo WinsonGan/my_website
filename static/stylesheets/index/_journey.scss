@@ -1,0 +1,42 @@
+.about {
+  .container {
+    padding-bottom: 5%;
+  }
+  .row {
+    height: 60vh;
+
+    h1 {
+      @extend .open-sans-extabold;
+      font-size: 35px;
+      position: relative;
+      margin-bottom: 50px;
+    }
+
+    span {
+      position: absolute;
+      bottom: -30px;
+      right: 0;
+      font-size: 16px;
+    }
+
+    li {
+      text-align: justify;
+      font-size: 18px;
+    }
+
+    &:nth-child(odd) .journey-content,
+    &:nth-child(even) .journey-pic {
+      margin-left: 10%;
+    }
+
+    .journey-detail {
+      padding-top: 30px;
+    }
+
+    .journey-pic {
+      height: 400px;
+      width: 600px;
+      border-radius: 10%;
+    }
+  }
+}
